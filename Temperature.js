@@ -1,5 +1,6 @@
+// http://www.teaching-materials.org/javascript/exercises/variables.html
 // The Temperature Converter
-// Store a celsius temperature inot a viarable.
+// Store a celsius temperature into a variable.
 // Convert the celsius temp to fahrenheit and output "NN celsius is NN fahrenehit".
 
 var celsius = 15;

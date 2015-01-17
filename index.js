@@ -3,21 +3,21 @@
 // 2) initialize
 
 // Ex1) 
-// delclaire
+// delclare
 // var x;
 // initialize
 // x = 5;
 // console.log(x);
 
 // Ex2)
-// both delclaires and initializes
+// both delclares and initializes
 // var y = 2;
 // console.log(y);
 
 // Data Types
 // strings: an immutable string of characters.
 // var greeting = 'Hello';
-// var resturant = "chipoltle";
+// var restaurant = "chipoltle";
 
 // number: whole (6, -102) or floating point (5.467)
 // var myAge = 25;
@@ -48,7 +48,7 @@
 // var 2coolForSchool;
 
 // Reserved words.
-// Certain words are reserved byt he language and cannot be used by you.
+// Certain words are reserved by the language and cannot be used by you.
 // A full list can be found online.
 // Ex) developer.mozilla.org
 
@@ -61,7 +61,7 @@
 // 2 + 2;
 // x * 3;
 
-// Variables can slo store results of these expressions.
+// Variables can also store results of these expressions.
 
 // Ex)
 // var x = 2 + 2;
@@ -169,7 +169,7 @@
 
 
 // What is this?
-// First, know that all function in JavaScript have properties. And whena f unciton executes, it gets the 'this' property.
+// First, know that all function in JavaScript have properties. And when a funciton executes, it gets the 'this' property.
 // The 'this ' is a variable with the value of the object that invokes the function where 'this ' is used.
 // Gilbert = "This points to the object being created."
 
@@ -238,9 +238,73 @@
 // (false && anything) => false
 // (true || anything) => true
 
+// Truthy vs Falsey
+
+// If you don't use a comparison or logical operator, JavaScript tries to figure out if the value is "truthy".
+// Best to explicity check for what you want.
+
+// Ex)
+// // Falsey example
+// var name = "";
+// if (name) {
+// 	console.log('Hello,' + name);
+// }
+
 
 // Difference between '==' and '==='
+// == does NOT check for type
 // The equality operator == does type coercion, meaning that the interpreter implicitly tries to convert the values before comparing.
 // === means that both operands refernce the same object
-// On the other hand, the identity operator === does not do type coercion, and thus does not convert the values when comparing.
+// === Checks for value and type.
+// === does not do type coercion, and thus does not convert the values when comparing.
 
+// The if/ else if / else statements
+// var age = "";
+// prompt("Input your age.")
+// if (age < 0 || age < 18) {
+// 	alert("not a valid age to use this site.");
+// } else if (age >= 18){
+// 	alert("Yay, you can drive and use this site!");
+// } else {
+// 	// this will never run, all eventualities are covered in first two conditionals
+// 	alert("Please input a valid age")
+// }
+
+// Variable Hoisting
+// Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+// In JavaScript, a variable can be delcared after it has bene used.
+// In other words, a variable can be used before it has been declared.
+// JavaScript only hoists declarations, not initializations.
+
+// Ex1)
+// x = 5; // Assign 5 to x
+
+// elem = document.getElementById("demo"); // Find an element 
+// elem.innerHTML = x;                     // Display x in the element
+
+// var x; // Declare x
+
+// Ex2)
+// var x; // Declare x
+// x = 5; // Assign 5 to x
+
+// elem = document.getElementById("demo"); // Find an element 
+// elem.innerHTML = x;                     // Display x in the element
+
+// While loops
+// Be careful! If you cause an infinite loop you will crash your program/browser
+// Like the infinite loop below
+// var x = 0;
+// while (x < 5) {
+// 	console.log(x);
+// 	x = x + 1;
+// }
+
+// For loops
+for (initialize; condition; update) {
+	// staement to repeat
+}
+
+for (var x = 0; x < 5; x = x + 1) {
+	// staement to repeat
+}
