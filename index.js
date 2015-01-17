@@ -157,6 +157,16 @@
 
 // }
 
+// Ex3) Automatically global
+// // code here can use carName
+
+// function myFunction() {
+//     carName = "Volvo";
+
+//     // code here can use carName
+
+// }
+
 
 // What is this?
 // First, know that all function in JavaScript have properties. And whena f unciton executes, it gets the 'this' property.
