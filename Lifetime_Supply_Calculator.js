@@ -9,5 +9,5 @@ var currentAge = 29;
 var maxAge = 113;
 var snack = 5;
 var eatSnackForLife = ((maxAge - currentAge) * snack);
-var lifetimeSupply = "You will need " + eatSnackForLife + " snacks to last you until the ripe old age of X!";
+var lifetimeSupply = "You will need " + eatSnackForLife + " snacks to last you until the ripe old age of" + maxAge;
 console.log(lifetimeSupply);

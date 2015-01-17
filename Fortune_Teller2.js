@@ -1,3 +1,4 @@
+// http://www.teaching-materials.org/javascript/exercises/functions.html
 // The Fortune Teller
 // Write a function that takes 4 argumetns and outputs your function to the screen.
 // Call that function three times with three different values fo the arguemtns.

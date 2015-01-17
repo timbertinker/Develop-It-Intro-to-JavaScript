@@ -172,3 +172,75 @@
 // First, know that all function in JavaScript have properties. And whena f unciton executes, it gets the 'this' property.
 // The 'this ' is a variable with the value of the object that invokes the function where 'this ' is used.
 // Gilbert = "This points to the object being created."
+
+// If / Else statements - conditional statements
+// Ex)
+// if (true) {
+// 	console.log('Is true.');
+// }
+
+// Ex2)
+// var x = 2;
+// if (x == 1) {
+// 	console.log("Is true");
+// } else {
+// 	console.log("Is false");
+// }
+
+// Ex3)
+// var x = 2;
+// if (x == 2 && x > 0) {
+// 	console.log("Is true");
+// } else {
+// 	console.log("Is false");
+// }
+// // Returns true
+
+// Ex4)
+// var x = 2;
+// if (x == 2 && x < 0) {
+// 	console.log("Is true");
+// } else {
+// 	console.log("Is false");
+// }
+// // Returns false
+
+// Ex5)
+// var x = 2;
+// if (x == 2 || x < 0) {
+// 	console.log("Is true");
+// } else {
+// 	console.log("Is false");
+// }
+// //Returns true
+
+// Ex6)
+// var x = 3;
+// if (x == 2 || x < 0) {
+// 	console.log("Is true");
+// } else {
+// 	console.log("Is false");
+// }
+// // Returns false
+
+// Ex7)
+// var myAge = 29;
+// if ((myAge >= 0 && myAge < 3) || myAge > 90) {
+// 	console.log("You're not quite in your peak.");
+// } else {
+// 	console.log("You're in your peak!");
+// }
+// // Returns "You're in your peak!"
+
+// Short Circit Evaluation in logical operators
+// JavaScript evaluates logical operators from left to right and stops evaluatin as soon as it know sthe answer.
+//  Ex)
+// (false && anything) => false
+// (true || anything) => true
+
+
+// Difference between '==' and '==='
+// The equality operator == does type coercion, meaning that the interpreter implicitly tries to convert the values before comparing.
+// === means that both operands refernce the same object
+// On the other hand, the identity operator === does not do type coercion, and thus does not convert the values when comparing.
+
