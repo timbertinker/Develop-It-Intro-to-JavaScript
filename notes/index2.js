@@ -178,4 +178,24 @@
 // <img id="mainpicture" src="http://placekitten.com/200/300">
 // var img = document.getElementById('mainpicture');
 // var oldSrc = img.src;
-img.src = 'http://placekitten.com/100/500';
+// img.src = 'http://placekitten.com/100/500';
+
+DOM inner HTMLEach DOM node ahs an innerHTML property with the HTML of all its children.
+Ex)
+document.body.innerHTML;
+
+You can set the innerHTML yourself ot chage the contents of the node.
+Ex)
+document.body.innerHTML = "<h1>Oh Noes!</h1> <p>I just changed the whole page!</p>
+
+DOM Modifying
+The document object also provides ways to create nodes from scratch.
+Ex)
+document.createElement(tagName);
+document.createTextNode(text);
+document.appendChild();
+Ex2)
+var newImg = document.createElement('img');
+newImg.src = 'http://placekitten.com/400/300';
+newImg.style.border = '1px solid black';
+document.body.appendChild(newImg);
