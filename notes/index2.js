@@ -180,22 +180,43 @@
 // var oldSrc = img.src;
 // img.src = 'http://placekitten.com/100/500';
 
-DOM inner HTMLEach DOM node ahs an innerHTML property with the HTML of all its children.
-Ex)
-document.body.innerHTML;
+// DOM inner HTMLEach DOM node ahs an innerHTML property with the HTML of all its children.
+// Ex)
+// document.body.innerHTML;
 
-You can set the innerHTML yourself ot chage the contents of the node.
-Ex)
-document.body.innerHTML = "<h1>Oh Noes!</h1> <p>I just changed the whole page!</p>
+// You can set the innerHTML yourself ot chage the contents of the node.
+// Ex)
+// document.body.innerHTML = "<h1>Oh Noes!</h1> <p>I just changed the whole page!</p>
 
-DOM Modifying
-The document object also provides ways to create nodes from scratch.
-Ex)
-document.createElement(tagName);
-document.createTextNode(text);
-document.appendChild();
-Ex2)
-var newImg = document.createElement('img');
-newImg.src = 'http://placekitten.com/400/300';
-newImg.style.border = '1px solid black';
-document.body.appendChild(newImg);
+// DOM Modifying
+// The document object also provides ways to create nodes from scratch.
+// Ex)
+// document.createElement(tagName);
+// document.createTextNode(text);
+// document.appendChild();
+// Ex2)
+// var newImg = document.createElement('img');
+// newImg.src = 'http://placekitten.com/400/300';
+// newImg.style.border = '1px solid black';
+// document.body.appendChild(newImg);
+
+// //////////////
+// ////EVENTS////
+// //////////////
+// Events
+// Allow event-driven programming languages like JavaScript to register various events to fire.
+// Handlers or listeners cnab e set to handle these events.
+// Listen for actions.
+// Event Types
+
+// For example, MouseEvents repors the clicked coordiantes.
+  // <img id="kitten" src="http://placekitten.com/200/300">
+  // <div id="info"></div>
+  // <script>
+// var kittenImg = document.getElementById('kitten');
+// var infoDiv   = document.getElementById('info');
+// function onClick(event) {
+//     info.innerHTML = 'You clicked on ' + event.clientX + ' , ' + event.clientY;
+// }
+// kittenImg.addEventListener('click', onClick, false);
+  </script>
