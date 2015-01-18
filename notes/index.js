@@ -1,3 +1,5 @@
+// http://soitof.github.io/gdi-javascript/class1.html#/
+
 // variables- store values
 // 1) declaration - delclare the var
 // 2) initialize
@@ -300,11 +302,27 @@
 // 	x = x + 1;
 // }
 
-// For loops
-for (initialize; condition; update) {
-	// staement to repeat
-}
+// // For loops
+// for (initialize; condition; update) {
+// 	// staement to repeat
+// }
 
-for (var x = 0; x < 5; x = x + 1) {
-	// staement to repeat
-}
+// for (var x = 0; x < 5; x = x + 1) {
+// 	// staement to repeat
+// }
+
+// Arrays
+// Can't talk about for loops without arrays.  Arrays and for loops go hand-in-hand. An array is a type of data-type that holds an ordered list of values, of any type.
+// Arrays and for loops are bff's.
+
+// var arrayName = [element0, element1, element2 ..]
+
+You index or access items with "bracket notation".
+Index starts at 0.
+var arrayItem = arrayname[indexNum];
+
+var rainbowColors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
+// Can use methods like .push .pop 
+rainbowColors.push("Silver")
+// Will add "sivler" to the rainbow array

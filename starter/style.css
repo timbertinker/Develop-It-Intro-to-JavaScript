@@ -1,0 +1,9 @@
+* {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+img {
+	border: 4px solid gray;
+	border-radius: 25px;
+}
